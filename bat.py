@@ -13,11 +13,7 @@ try:
 except:
     os.system("pip install tqdm")
     from tqdm import tqdm
-try:
-    import coluroma
-except ImportError:
-    os.system("pip install coluroma")
-    from coluroma import colors
+
 
 colorama.deinit()
 banner = Center.XCenter("""
